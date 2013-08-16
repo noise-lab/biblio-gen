@@ -33,3 +33,14 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# cache stuff
+cache
+cite_cache
+
+# output stuff
+full
+author.html
+topic.html
+date.html
+bibtex.html
