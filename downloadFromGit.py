@@ -27,7 +27,11 @@ def update_repository(remote_repository, local_repository):
             print >>sys.stderr, 'Error cloning git repository'
             sys.exit(1)
     else:
-        code = subprocess.call(['cd', local_repository, ';', 'git', 'pull', remote_repository], shell=True)
+        print 'Pulling from', remote_repository, 'to', local_repository
+        current_dir = os.getcwd()
+        os.chdir(local_repository)
+        code = subprocess.call(['git', 'pull', remote_repository])
+        os.chdir(current_dir)
         if code != 0:
             print >>sys.stderr, 'Error pulling from remote git repository'
             sys.exit(1)
