@@ -5,11 +5,12 @@
 # 1. Clones a git repository containing a bunch of bib files and a biblio-gen
 # configuration file.
 # 2. Concatenates the bib files to create a master bibliography file. This lets
-# your organize your bib files into directories and files. For example, by
+# you organize your bib files into directories and files. For example, by
 # conference and year.
 # 3. Symlinks files from the static/ directory into the output directory tree
 # (specified by the OUTPUT_DIR configuration variable.) It only symlinks file
-# which don't already exist.
+# which don't already exist. This lets you share style sheets, etc across
+# bibliographies.
 
 import errno
 import os
