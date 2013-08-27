@@ -1,5 +1,5 @@
 Copyright (c) 2003-2008 Nick Mathewson
-Copyright (c) 2013 Nick Feamster
+Copyright (c) 2013 Nick Feamster, Sam Burnett
 
 Based on 'PDOSBib' by Eddie Kohler and 'anonbib' python code by Nick Mathewson
 Forked from anonbib 0.3
@@ -50,3 +50,9 @@ New in 0.3:
    - Note an error when a crossref overrides an existing field in an entry.
    - Handle the Proceedings type correctly.
    - Enforce proper encoding on pages: it must be number--number.
+
+New on 2013-08-27:
+   - Added downloadFromGit.py, which fetches a git repository with a bunch of
+     bib files and a biblio-gen configuration file, generates a master
+     bibliography file by concatenating the bib files, and links missing
+     resources into the directory tree from the "static" directory.
