@@ -15,6 +15,8 @@ To use this package:
      extra keys used in our "anonbib.bib" file.  All of the additional
      Bibtex keys we user have the prefix "www_"; check out anonbib.bib
      for their usage.
+     - If you want to fetch your bib file from another git repository,
+       see downloadFromGit.py.
 
    - Edit anonbib.cfg and _template_.html and _template_bibtex.html so they
      refer to your files, authors, topics, and so on.
