@@ -13,7 +13,6 @@
 
 import errno
 import os
-import shutil
 import subprocess
 import sys
 import traceback
